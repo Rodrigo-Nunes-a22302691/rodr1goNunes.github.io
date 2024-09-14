@@ -29,3 +29,7 @@ body{
     margin-top: 15px;           
     color: black;
 }
+
+.centerImage{
+    text-align: center;
+}
