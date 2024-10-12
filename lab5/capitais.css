@@ -99,3 +99,13 @@
 #capitais section div {
     font-size: 1.2em; /* Tamanho do texto */
 }
+
+#Topic h3{
+    color: #4733e1;
+    font-size: 24px;
+    border-bottom: 2px solid #4733e1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {font-family: "Times New Roman", times, serif;}
