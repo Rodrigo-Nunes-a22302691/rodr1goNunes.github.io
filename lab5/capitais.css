@@ -1,0 +1,101 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+  }
+  
+  
+  header, main, article {
+    /* centrando o texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+  
+  header {
+    background: #4733e1;
+    color: white;
+    position: sticky;
+    z-index: 2;
+    height: 10vh;
+    top: 0;
+    justify-content: space-around;
+  }
+  header a{
+    padding:20px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+  }
+  header a:hover{
+    background-color: white;
+    padding: 1em;
+  }
+  
+  
+  main {
+    height: 40px;
+    background: white;
+    justify-content: space-around;
+  }
+  main a{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+  }
+  main a:hover{
+    background-color: lightgray;
+  }
+
+  
+  
+  article {
+    height: 50vh;
+    width: 100vw;
+    background: lightgray;
+  }
+  .autor{
+    font-weight: bold;
+    font-style:italic;
+    font-size: 0.5em;
+  }
+
+  .imagemAutor{
+    position: relative;
+  }
+  .imagemAutor a{
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    background-color: white;
+    border-radius: 5px; 
+    font-size: 1.2
+  }
+
+  #capitais{
+    padding: 8px;
+    display: flex;               
+    flex-direction: row;       
+    flex-wrap: wrap;           
+    justify-content: space-around; 
+    align-items: flex-start;    
+    gap: 20px;                 
+  }
+
+#capitais section {
+    display: flex; /* Alinha a imagem e o texto na mesma linha */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 10px; /* Espaço entre seções */
+}
+
+#capitais section img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+#capitais section div {
+    font-size: 1.2em; /* Tamanho do texto */
+}

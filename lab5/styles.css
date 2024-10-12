@@ -118,3 +118,7 @@ label, input {
     justify-content: center;
     align-items: center;
 }
+
+.porto{
+    text-transform: uppercase;
+}
