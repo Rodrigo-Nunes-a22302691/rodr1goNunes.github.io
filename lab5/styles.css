@@ -19,22 +19,21 @@ nav{
     display: flex;
     justify-content: space-around;
 }
-nav a:hover{
-    background-color: #4733e1;
-    color: white;
-    padding: 20px 35px;
-}
 nav a{
     text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+nav a:hover{
+    background-color: #4733e1;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
 }
 nav a:active{
-    color: #FF4500;
-}
-nav a:visited{
-    color: #6a0dad;
-}
-nav a:link{
-    color: #4733e1;
+    color: white;
+    background-color: rgb(177, 1, 177);
 }
 
 main{

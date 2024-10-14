@@ -7,11 +7,17 @@
   
   
   header, main, article {
-    /* centrando o texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3em;
+  }
+  #paisagem{
+    margin-top: 350px;
+    margin-bottom: 350px;
+  }
+  #capitais{
+    margin-bottom: 0px;
   }
   
   header {
@@ -21,7 +27,7 @@
     z-index: 2;
     height: 10vh;
     top: 0;
-    justify-content: space-around;
+    justify-content:space-between;
   }
   header a{
     padding:20px;
@@ -29,24 +35,34 @@
     color: black;
     font-size: 30px;
   }
+  header a:nth-child(4){
+    padding:20px;
+    text-decoration: none;
+    color: rgb(177, 1, 177);
+    background-color: rgba(255, 255, 255, 0.575);
+    border-radius: 30px;
+    font-size: 30px;
+    margin-right: 15px;
+  }
   header a:hover{
     background-color: white;
-    padding: 1em;
+    border-radius: 30px;
+  }
+  header a:active{
+    color: white;
+    background-color: rgb(177, 1, 177);
+  }
+  header a:nth-child(4):active{
+    color: white;
+    background-color: rgb(177, 1, 177);
+  }
+  header h1{
+    margin-left: 15px;
   }
   
   
   main {
-    height: 40px;
     background: white;
-    justify-content: space-around;
-  }
-  main a{
-    font-size: 22px;
-    text-decoration: none;
-    color: black;
-  }
-  main a:hover{
-    background-color: lightgray;
   }
 
   
@@ -69,9 +85,22 @@
     position: absolute;
     bottom: 10px; 
     right: 10px; 
+    background-color: rgba(255, 255, 255, 0.26);
+    padding-left: 8px;
+    padding-right: 8px;
+    color: black;
+    border-radius: 20px; 
+    text-decoration: none;
+    font-size: 0.6em;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  .imagemAutor a:hover{
     background-color: white;
-    border-radius: 5px; 
-    font-size: 1.2
+  }
+  .imagemAutor img{
+    width:100vw;
+    height: auto;
   }
 
   #capitais{
@@ -84,34 +113,32 @@
     gap: 20px;                 
   }
 
-  #paisagem img{
-    height: auto;
-  }
-
 #capitais section {
-    background-color: #ffffff;
-    border-radius: 20px;
-    align-items: center; 
-    margin-bottom: 10px; 
-    justify-content: space-around;
-    display: flex; 
-    flex-direction:row;
-    flex-wrap: wrap;
-    margin-left: 16.5%;
-    margin-right: 16.5%;
-    align-items: center;
-    width: 12%; 
-    height: 100px; 
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  border-radius: 25px;
+  max-width: 235px;
+  width: 100%;
+  max-height: 75px;
+  height: 100%;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 #capitais section img {
     width: 100px;
     height: auto; 
     margin-right: 10px; 
+    overflow: hidden;
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px; 
 }
 
 #capitais section div {
     font-size: 0.5em; 
+    margin-right: 35px;
+    margin-top: 23px;
 }
 
 #Topic h3{
@@ -135,4 +162,13 @@ h2{
 
 body{
   background-color: lightgray;
+}
+
+footer{
+  background-color: #4733e1;
+  padding: 4px;
+}
+footer p{
+  text-align: center;
+  color: white;
 }
