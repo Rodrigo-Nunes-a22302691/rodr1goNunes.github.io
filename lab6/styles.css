@@ -42,6 +42,10 @@ nav a:active{
 main{
     padding-top: 7px;
 }
+.imagens{
+    display: flex;
+    justify-content: space-around;
+}
 .imagens img{
     width: 32.2%;
     height: auto;

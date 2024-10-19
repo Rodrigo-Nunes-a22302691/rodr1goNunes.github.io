@@ -1,4 +1,4 @@
-@media (max-width: 600px){
+@media (max-width: 900px){
 
     * {
         box-sizing: border-box;
@@ -29,7 +29,12 @@
         'footer';
     }
 
-    .imagens img{
+    nav{
+        display: flex;
         justify-content: space-around;
+    }
+    nav a{
+        margin-left: 4px;
+        margin-right: 4px;
     }
 }
